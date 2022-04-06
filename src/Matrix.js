@@ -3,14 +3,14 @@ import React from 'react'
 const Matrix = () => {
     
     let matrix1 = [
-        [2,4,1],
-        [6,9,8],
-        [1,2,5]
+        [1,0,2],
+        [0,1,2],
+        [0,0,1]
     ];
     let matrix2 = [
-        [5,4,8],
-        [6,2,3],
-        [1,5,5]
+        [250,0,0],
+        [250,0,0],
+        [1,0,0]
     ]; 
     const multMatrix = () => {
         let matrix3 = [
@@ -30,7 +30,9 @@ const Matrix = () => {
             }
         }
         console.table(matrix3);
-    }    
+        console.log(matrix3[0][0]," - ", matrix3[1][0]);   
+    }
+     
 
   return (
     <>
